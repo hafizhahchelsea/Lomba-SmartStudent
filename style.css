@@ -1,0 +1,576 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffeae0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.nav .logo h1 {
+  font-weight: 600;
+  font-family: sans-serif;
+  color: black;
+  padding-left: 100px;
+}
+
+.nav .logo b {
+  color: #ff511c;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-right: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+input {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-sigin {
+  display: flex;
+  margin-top: 20px;
+}
+
+.signin {
+  background: transparent;
+  border: none;
+  padding-left: 50px;
+}
+
+.signup {
+  background-color: #ff511c;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+
+.content {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+.content .content-left b {
+  color: #ff511c;
+}
+
+.content .content-left {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.content .content-left .info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .content-left h2 {
+  font-size: 50px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  padding-right: 100px;
+  margin-left: 100px;
+  line-height: 4pc;
+}
+
+.content .content-left p {
+  font-size: 25px;
+  line-height: 2.5pc;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  margin-left: 100px;
+}
+
+.content .content-left button {
+  padding: 20px 30px;
+  background-color: #ff511c;
+  color: #ffff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.content .content-right {
+  display: block;
+  width: 100%;
+}
+
+.content .content-right img {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  user-select: none;
+  animation: rotate 10s linear infinite;
+  margin-right: 100px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  padding-top: 20px;
+}
+
+.search input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search button {
+  padding: 5px 5px;
+  background-color: #ff511c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.courses {
+  padding: 20px;
+  height: 900px;
+  background-image: url(https://i.pinimg.com/564x/a2/73/30/a273309cba481e25d7314f6af2aa7b3c.jpg);
+  background-size: cover;
+}
+
+.courses h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 50px;
+  color: #ff511c;
+}
+
+.course-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.course-item {
+  width: 200px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.course-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.course-item p {
+  color: #ff511c;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.course-item button {
+  padding: 8px 15px;
+  background-color: #ff511c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Tutors {
+  background-color: white;
+}
+
+.Tutors-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Tutors-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.popular-tutors {
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url(https://i.pinimg.com/564x/06/67/17/0667170172c6f0384d61b3f8ad2f5ba7.jpg);
+  height: 1000px;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.tutor-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tutor-card {
+  background-color: #ffeae0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.tutor-card:hover {
+  transform: scale(1.05);
+}
+
+.tutor-card img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.tutor-card h3 {
+  margin: 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.tutor-card p {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.testimonials {
+  padding: 20px;
+  background-color: #ffeae0;
+  height: 500px;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #f4a682;
+  padding: 15px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin: 20px;
+}
+
+.profile-box {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px;
+}
+
+/* Efek hover untuk memperbesar box */
+.profile-box:hover {
+  transform: scale(1.05);
+}
+
+/* Styling gambar produk */
+.profile-box img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Nama produk */
+.profile-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0 5px 0;
+  font-family: sans-serif;
+}
+
+/* Deskripsi produk */
+.profile-description {
+  font-size: 15px;
+  color: black;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+}
+
+/* Tombol aksi */
+.profile-box button {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #ff511c;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efek hover pada tombol */
+.profile-box button:hover {
+  background-color: #f4a682;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  border: solid 1px black;
+  border-radius: 50px;
+  max-width: 1200px;
+  background-color: white;
+  justify-content: center;
+ margin: auto;
+  margin-bottom: 50px;
+}
+
+.contact-info {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.map {
+  width: 55%;
+  margin-left: 50px;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e64c06;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #efa17d;
+}
+
+footer {
+  background-color: #efa17d;
+  color: white;
+  padding: 20px 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 10px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color:white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color:#ff511c;
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Tutors-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gmaps{
+    width: 500px;
+    height: 500px;
+  }
+
+  .search{
+    margin-top: 100px;
+  }
+
+  .profile-box{
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .profile-box {
+    width: 200px;
+    height: 500px;
+    gap: 10px;
+    margin-left: 35px;
+  }
+  .gmaps{
+    height: 400px;
+    width: 250px;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .popular-tutors{
+    height: 1100px;
+  }
+
+  .tutor-card{
+    width: 200px;
+    height: 420px;
+  }
+
+  .tutor-card h3{
+    font-size: 20px;
+  }
+
+  .tutor-card p{
+    font-size: 15px;
+  }
+}
